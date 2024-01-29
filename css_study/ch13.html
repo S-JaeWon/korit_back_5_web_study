@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex; /*자식 클래스가 아닌 부모 클래스에 flex를 걸어줌 -> 옆으로 나열, 기본적으로 block*/
+            flex-direction: row;
+            justify-content: center; /*중앙으로 나열 - center / 우측 끝으로 나열 flex-end*/
+            align-items: center; /*위 아래 조절 */
+            /* flex-wrap: wrap; */
+
+            border: 1px solid #000;
+            height: 400px;
+        }
+
+        .box1 {
+            border: 1px solid #000; /*인라인 블록 사용시 자간때문에 빈공간이 생김*/
+            width: 100px;
+            height: 50px;
+        }
+
+        /*item 와 content 차이: 전자는 줄마다 하나씩 취급, 후자는 통으로 취급*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
