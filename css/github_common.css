@@ -1,0 +1,16 @@
+.root-header {
+    border-bottom: 1px solid #dbdbdd;
+    width: 100%;
+    height: 104px;
+    background-color: rgb(246, 248, 250);
+}
+
+.menu-button {
+    margin: 15px;
+    border: solid #dbdbdd;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(246, 248, 250);
+    cursor: pointer;
+}

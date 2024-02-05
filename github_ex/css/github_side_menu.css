@@ -1,0 +1,44 @@
+.side-menu-layout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33333311;
+}
+
+.side-menu {
+    border-right: 1px solid black;
+    height: 100%;
+    width: 320px;
+    background-color: white;
+    box-shadow: 1px 0px 10px #00000011;
+}
+
+.side-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 8px 8px 0px;
+    width: 100%;
+}
+
+.side-logo {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px 0px 8px;
+    width: 48px;
+    height: 48px;
+}
+
+.side-button{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border: none;
+    margin: 8px;
+    width: 48px;
+    height: 32px;
+
+}
