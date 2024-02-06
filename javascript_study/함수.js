@@ -1,6 +1,6 @@
 function add(num1, num2) {
     console.log("num1: " + num1);
-    console.log(`num2: ${num2}`); // EL표현식 -> 문자열 안에서 대입 가능 
+    console.log(`num2: ${num2}`); // EL표현식 -> 문자열 안에서 변수 대입 가능 
     return num1 + num2;
 }
 
@@ -24,7 +24,7 @@ console.log(user.addFunction(10, 20));
 console.log(user, user.addFunction(10, 20));
 
 // 익명 함수
-let sub = function (a, b) {
+let sub = function /*aaa, 이름 생략 가능*/(a, b) {
     return a - b;
 }
 

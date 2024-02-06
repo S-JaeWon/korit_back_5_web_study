@@ -1,5 +1,7 @@
 const submitButton = document.querySelector(".button");
+
 let index = 1;
+
 submitButton.onclick = () => {
     const input1 = document.querySelector(".name");
     const input2 = document.querySelector(".age");
@@ -9,11 +11,16 @@ submitButton.onclick = () => {
 
     
     dataList.innerHTML += `
-        <tr>${index}</tr>
-        <tr>${input1.value}</tr>
-        <tr>${input2.value}</tr>
-        <tr>${input3.value}</tr>
+        <tr>
+            <td>${index}</td>
+            <td>${input1.value}</td>
+            <td>${input2.value}</td>
+            <td>${input3.value}</td>
+        </tr>
     `;
     index ++;
     
+    input1.value = "";
+    input2.value = "";
+    input3.value = "";
 }

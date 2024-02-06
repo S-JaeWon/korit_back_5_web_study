@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="text-inputs" placeholder="username">
+    <input type="text" class="text-inputs" placeholder="password">
+    <input type="text" class="text-inputs" placeholder="name">
+    <input type="text" class="text-inputs" placeholder="email">
+
+    <ul>
+        <li class="preview-datas">username: </li>
+        <li class="preview-datas">password: </li>
+        <li class="preview-datas">name: </li>
+        <li class="preview-datas">email: </li>
+    </ul>
+
+    <script>
+        const textInput = document.querySelectorAll(".text-inputs");
+        
+        for(let i = 0; i < textInput.length - 1; i++) {
+            textInput[i].onkeyup = (e) => {
+                if(e.keyCode === 13) {
+                    textInput[i + 1].focus();
+                }
+            }
+        } // 엔터를 치면 다음 포커스로 넘어감 
+
+        textInput[3].onkeyup =(e) => {
+            if(e.keyCode === 13) {
+
+                for(let input of textInput) {
+                    if(input.value === "") {
+                        input.focus();
+                        return;
+                    } // 빈 칸이 있다면 그 곳으로 포커스 이동 
+                }
+                const previewDatas = document.querySelectorAll(".preview-datas");
+                for(let i = 0; i < previewDatas.length; i++) {
+                    previewDatas[i].innerHTML += textInput[i].value;
+                }
+            }
+         
+        } // 4번째 칸 index가 3일 때 각 번호에 맞는 값 가져와서 대입 
+
+    </script>
+    
+</body>
+</html>
