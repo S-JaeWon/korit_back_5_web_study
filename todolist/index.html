@@ -17,11 +17,33 @@
     <div class="root-layout">
         <div class="main-layout">
             <header>
-                <h1 class="main-title">Todo list</h1>
+                <h1 class="main-title">Todo List</h1>
                 <p class="sub-title">할 일을 기록하기</p>
             </header>
             <main>
-
+                <ul class="todo-content-list">
+                    <!-- <li class="todo-content-box">
+                        <div class="todo-content-header">
+                            <span>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <span class="todo-content-date">
+                                2024년 2월 7일 (수)
+                            </span>
+                        </div>
+                        <div class="todo-content-main">
+                            <pre class="todo-content">테스트 데이터</pre>
+                        </div>
+                        <div class="todo-content-footer">
+                            <button class="todo-edit-button" onclick="handleEditTodoModalOpen(1)">
+                                <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button class="todo-remove-button">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li> -->
+                </ul>
             </main>
             <footer>
                 <button class="add-button" onclick="handleAddTodoModalOpen()">
@@ -44,6 +66,7 @@
             </div>
         </div>
     </div>
+    <script src="js/todo.js"></script>
     <script src="js/modal.js"></script>
 </body>
 </html>

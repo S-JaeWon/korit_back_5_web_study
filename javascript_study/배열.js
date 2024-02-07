@@ -1,4 +1,5 @@
 // 자바스크립트 배열은 자바의 ArryList와 유사
+// ArryList -> 값을 계속 넣을 수 있는 배열 
 
 let numbers1 = [];
 let numbers2 = new Array();

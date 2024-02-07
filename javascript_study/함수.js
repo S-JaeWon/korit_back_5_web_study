@@ -23,7 +23,7 @@ let user = {
 console.log(user.addFunction(10, 20));
 console.log(user, user.addFunction(10, 20));
 
-// 익명 함수
+// 익명 함수, 변수에 함수를 담기
 let sub = function /*aaa, 이름 생략 가능*/(a, b) {
     return a - b;
 }

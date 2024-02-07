@@ -8,7 +8,7 @@ console.log("test"); // sysout
 // var num = 10;
 // num = "안녕";
 
-// typerof 키dbhen
+// typeof 키워드
 
 console.log(typeof(10.0));
 console.log(typeof("10"));
