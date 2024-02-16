@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+    <div class="root-layout">
+        <div class="main-layout">
+            <header>
+                <h1 class="main-title">Today List</h1>
+            </header>
+            <main>
+                <ul class="content-list">
+                    <li class="content-inputs">1<input type="checkbox" class="content-checkbox"></li>
+                    <li class="content-inputs">2<input type="checkbox" class="content-checkbox"></li>
+                    <li class="content-inputs">3<input type="checkbox" class="content-checkbox"></li>
+                    <li class="content-inputs">4<input type="checkbox" class="content-checkbox"></li>
+                    <li class="content-inputs">5<input type="checkbox" class="content-checkbox"></li>
+                </ul>
+            </main>
+            <footer>
+                <button class="button" onclick="handleAddClick();">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+                <button class="button" onclick="handleRemoveClick();">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/todo.js"></script>
+</body>
+</html>

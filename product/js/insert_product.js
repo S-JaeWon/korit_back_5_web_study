@@ -25,6 +25,7 @@ function handleAddClick() {
             return response.json().then(error => Promise.reject(error));
         }
         return response.json();
+        
     })
     .then(json => {
         console.log(json.product);
@@ -32,6 +33,6 @@ function handleAddClick() {
     .catch(error => {
         console.log("에러");
         console.log(error);
-        alert(error.errorMessage);
+        alert(error?.errorMessage);
     });
 }

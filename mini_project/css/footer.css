@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.button {
+    border: 1px solid #F3E2A9;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background-color: #F5DA81;
+    &:hover {
+        background-color: #fafafa;
+    }
+    &:active {
+        background-color: #eee;
+    }
+}

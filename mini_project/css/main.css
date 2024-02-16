@@ -1,0 +1,29 @@
+main {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    background-color: #F5DA81;
+}
+
+.content-list {
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.content-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.content-checkbox {
+    order: 1; 
+    margin-left: 8px;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+}
