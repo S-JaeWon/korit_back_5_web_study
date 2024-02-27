@@ -49,7 +49,7 @@ function handleSubmitClick() {
     const p1 = new Promise((resolve, reject) => {
         console.log("p1 프로미스 실행");
         // resolve 호출 
-        //resolve(); 
+        // resolve(); 
         reject(); // 예외처리에 쓰임 
     });
     
