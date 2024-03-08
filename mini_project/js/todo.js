@@ -24,3 +24,14 @@ function handleRemoveClick() {
         }
     });
 }
+
+function handleInsertClick() {
+    const contentText = document.querySelectorAll(".content-text");
+    const content = {
+        content: contentText[0].value
+
+    };
+
+    console.log(content);
+    const jsonContent = JSON.stringify(content);
+}
