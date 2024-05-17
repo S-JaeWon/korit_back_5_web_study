@@ -19,10 +19,11 @@ function handleAddClick() {
     };
 
     fetch("http://localhost:8080/product/product", option)
-    .then(response => {
+    .then(async response => {
         if (!response.ok) {
             // 상태 코드가 2xx(성공)가 아닌 경우에 reject 처리
-            return response.json().then(error => Promise.reject(error));
+            const error = await response.json();
+            return await Promise.reject(error);
         }
         return response.json();
         

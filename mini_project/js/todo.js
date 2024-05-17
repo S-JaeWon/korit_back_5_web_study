@@ -1,7 +1,14 @@
-function handleAddClick() {
-    const contentList = document.querySelector(".content-list")
-    const contentText = document.querySelector(".content-text")
-    
+async function handleAddClick() {
+    const contentList = document.querySelector(".content-list");
+    const contentText = document.querySelector(".content-text");
+
+    // contentText 값이 빈 문자열인지 확인
+    if (contentText.value.length === 0) {
+        // 만약 비어 있다면 아무 작업도 하지 않고 함수 종료
+        return;
+    }
+
+    // 리스트에 추가
     contentList.innerHTML += `
         <li class="content-inputs">
             ${contentText.value} 
@@ -9,6 +16,33 @@ function handleAddClick() {
         </li>
     `;
 
+    // 서버에 데이터 전송
+    const content = {
+        content: contentText.value
+    };
+
+    try {
+        const response = await fetch("http://localhost:8080/todo_list/todo", {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(content)
+        });
+
+        if (!response.ok) {
+            throw await response.json();
+        }
+
+        const jsonResponse = await response.json();
+        console.log(jsonResponse);
+        alert("등록 완료");
+    } catch (error) {
+        console.error("에러 발생:", error?.errorMessage);
+        alert("오류");
+    }
+
+    // 입력 필드 초기화
     contentText.value = "";
 }
 
